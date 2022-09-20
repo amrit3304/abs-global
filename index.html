@@ -107,9 +107,10 @@
             <i class="fa fa-twitter"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
           </div>-->
         </div>
-        <div class="form w3-margin-top">
+        <!--
+          <div class="form w3-margin-top">
           <div class="container w3-round-xlarge">
-            <form class="w3-highway-blue w3-padding-large w3-round-large">
+            <form class="w3-highway-blue w3-padding-large w3-round-large" id="emailform">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name">
 
@@ -124,10 +125,11 @@
             </form>
           </div>
         </div>
+        -->
       </div>
 
       <div class=" w3-highway-blue w3-padding-large" id="footer">
-        <p class="w3-center logo">© 2022 - ABS GLOBAL - All rights reserved</p>
+        <p class="w3-center logo">© 2017 - ABS GLOBAL - All rights reserved</p>
       </div>
 
   <script src = "https://smtpjs.com/v3/smtp.js"></script>
@@ -137,24 +139,6 @@
     function toggleMobileNavigation() {
       const mobileNavigation = document.getElementById("mobile-sidenav");
       mobileNavigation.classList.toggle('mobile-links-active');
-    }
-    function sendmail() {
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const subject = document.getElementById("subject");
-
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "amrit.georgian@gmail.com",
-        Password: "7679838878",
-        To: "amrit@factr.in",
-        From: email,
-        Subject: "Inquiry from ABS Global website made by Amrit",
-        Body: subject,
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
     }
   </script>
   </body>
