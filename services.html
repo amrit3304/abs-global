@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>ABS Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="navigation w3-highway-blue w3-container">
+      <nav class="nav-container w3-padding-large">
+        <div class="logo">
+            <a href="/#home" >ABS <span>GLOBAL</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+          <div class="links">
+            <a href="/#about" >About</a>
+            <a href="/#vision" >Vision</a>
+            <a href="#sevices" >Services</a>
+            <a href="/#contact" >Contact</a>            
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+            <div class="mobile-logo" style="display: inline;">
+              <a href="/#home" class="logo">ABS <span>GLOBAL</span></a>
+              <span style="width: 100%;"></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+            </div>
+            <a href="/#about" onclick="toggleMobileNavigation()">About Us</a>
+            <a href="/#vision" onclick="toggleMobileNavigation()">Vision</a>
+            <a href="#sevices" onclick="toggleMobileNavigation()">Services</a>
+            <a href="/#contact" onclick="toggleMobileNavigation()">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+    <div class="services container" id="services">
+        <h2 class="w3-center">Our services</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>EXECUTIVE SEARCH</h3>
+            <div class="card-text">
+              <p>Leadership is the single most important contributing factor to an organization&apos;s success.
+                Board level appointments, Executive Search, CxO level solutions Senior Executives and Top Management form the most critical resources for any organization.
+                Identifying, screening, assessing and recruiting qualified individuals to serve in a dynamic environment requires insight, creativity and experience, at Accord we are expert at this.
+              </p>
+              <br>
+              <br>
+              <p>
+                Today companies are increasingly turning to specialized search firms to help them find leaders who can take them to newer heights.
+                We have what it takes to help you hire the right person to occupy the C-Suite roles in your organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services container" id="services">
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>HEADHUNTING</h3>
+            <div class="card-text">
+              <p>We are providing Head Hunting Services for middle, senior level recruitment.
+              Our efficient employees do the industry mapping, focus n find out the profiles having the competence for your requirement.
+              Once they identify the 'right' person, they use their professional and social contacts to reach him.
+              </p>
+              <br>
+              <br>
+              <p>
+                The search executive explains him the job parameters, the compensation package and the positive effect of such assignments on his subsequent career.
+                A discreet reference to the people recruited earlier is also made and the candidate is invited to contact them to verify the facts.
+                Thus, head hunting team eliminates the possibility of the fact that "the best man may not even apply to the advertisements".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services container" id="services">
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>CONTRACT STAFFING</h3>
+            <div class="card-text">
+              <p>
+                ABS Global is a comprehensive HR services company offering solutions spanning the entire talent life cycle including Recruitment, Onboarding, Payroll, and Flexible Staffing.
+              </p>
+              <br>
+              <br>
+              <p>
+                We help enterprises and ventures by providing temporary staffing solutions enabling our clients to build a competent workforce.
+                We understand the needs, study the gap, and assist in improving your processes.
+                We have been providing contract staffing solutions for more than 5 years and have over 20+ clients.
+              </p>
+              <br>
+              <br>
+              <p>
+                ABS Global provides solutions across all industries, providing you with constant flexibility.
+                We offer you adequately vetted candidates, which gives you a competitive edge in your respective industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" w3-highway-blue w3-padding-large" id="footer">
+        <p class="w3-center logo">© 2017 - ABS GLOBAL - All rights reserved</p>
+      </div>
+
+  <script>
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+</script>
+  </body>
+</html>

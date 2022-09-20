@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>ABS Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="navigation w3-highway-blue w3-container">
+      <nav class="nav-container w3-padding-large">
+        <div class="logo">
+          <a href="#home" >ABS <span>GLOBAL</span></a>
+        </div>
+        <div class="mobile-button">
+          <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+        </div>
+        <div class="links">
+          <a href="#about" >About</a>
+          <a href="#vision" >Vision</a>
+          <a href="/services.html" >Services</a>
+          <a href="#contact" >Contact</a>            
+        </div>
+        <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+          <div class="mobile-logo" style="display: inline;">
+            <a href="#home" class="logo">ABS <span>GLOBAL</span></a>
+            <span style="width: 100%;"></span>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+          </div>
+          <a href="#about" onclick="toggleMobileNavigation()">About Us</a>
+          <a href="#vision" onclick="toggleMobileNavigation()">Vision</a>
+          <a href="/services.html" onclick="toggleMobileNavigation()">Services</a>
+          <a href="#contact" onclick="toggleMobileNavigation()">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero" id="home">
+      <div class="text container">
+        <p class="pre-title">One stop for global success</p>
+        <h1 class="title"> ABS <span>GLOBAL</span></h1>
+        <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="/services.html">OUR SERVICES</a> 
+      </div>
+    </div>
+
+    <div class="about container" id="about">
+      <h2>About Us</h2>
+      <ul>
+        <li>The “ABS Global” provides retained and contingency based search and recruitment services for companies of varying sizes across industry segments.</li>
+        <li>We also help executives find workplaces of their choice, matching their professional skills, career aspirations and personality attributes with the requirement, performance demands and work culture of organizations.</li>
+        <li>During the hiring process for the specific sector, equal importance is given to candidate&apos;s domain knowledge and their inclination towards ethics and integrity.
+          In order to achieve the stated objective, we do various reference checks and ensure that there are no gaps in the process.</li>
+      </ul>
+    </div>
+
+    <div class="about container" id="vision">
+      <div class="text-one">
+        <h2>Vision</h2>
+        <p>We aim to be the most dependable providers of cost effective and timely manpower solutions to both the IT and non-IT industries by constantly supplying efficient and achievement-oriented candidates.
+          Our targets are always set to exceed client expectations.
+        </p>
+      </div>
+      <div class="text-one">
+        <h2>Our Mission</h2>
+        <p>Client Satisfaction is our ultimate mission and we pledge to ensure that by ardently searching for the best talent available and providing the client the same with maximum client benefit.
+          Our endeavors are to provide you with efficient, credible and professional individuals who are strongly motivated by the desire to excel and become pillars of company prosperity.</p>
+      </div>
+    </div>
+      
+    <div class="about container" id="recruitment">
+      <div class="text-one">
+        <h2>THE RECRUITMENT PROCESS</h2>
+        <p>We follow a carefully structured recruitment and selection process, which starts right from understanding the clients&apos; needs and functions all the way to follow-ups with both clients and candidates post recruitment.
+        </p>
+        <p>
+          Our Recruitment Process can be categorized into three phases, namely:
+          <ul>
+            <li>Planning &hyphen; Structure, Focus, Identity, Prepare</li>
+            <li>Implementation &hyphen; Contact, Motivate, Evaluate</li>
+            <li>Closure &hyphen; Select, Offer, Candidate joining</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+      <div class="contact container" id="contact">
+        <div class="short-contact">
+          <h2>Contact us</h2>
+          <p class="w3-xlarge">We would like to hear from you!</p>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-location-arrow"></i><span style="margin-left:10px;">61 C, 2nd floor, Kalu Sarai, Sarvpriya Vihar near Hauz Khas metro station, New Delhi- 110016</span><br>
+            <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a href="mailto:absglblhr@gmail.com">Send mail to absglblhr@gmail.com</a></span><br>
+            <i class="fa fa-phone"></i><span style="margin-left:10px;">011-49874222 | 9708655235</span><br>
+          </div>
+          <!--
+            <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-linkedin"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;">- LinkedIn</a></span><br>
+            <i class="fa fa-facebook"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;"> - Facebook</a></span><br>
+            <i class="fa fa-twitter"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
+          </div>-->
+        </div>
+        <div class="form w3-margin-top">
+          <div class="container w3-round-xlarge">
+            <form class="w3-highway-blue w3-padding-large w3-round-large">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email">
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+              <p>By submiting this form, you agree to our <a href="privacy-policy.html" target="_blank">privacy policy</a></p><br>
+              <input class="w3-metro-blue" type="submit" value="Submit" onclick="sendmail()">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class=" w3-highway-blue w3-padding-large" id="footer">
+        <p class="w3-center logo">© 2022 - ABS GLOBAL - All rights reserved</p>
+      </div>
+
+  <script src = "https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+    function sendmail() {
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const subject = document.getElementById("subject");
+
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "amrit.georgian@gmail.com",
+        Password: "7679838878",
+        To: "amrit@factr.in",
+        From: email,
+        Subject: "Inquiry from ABS Global website made by Amrit",
+        Body: subject,
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+  </body>
+</html>
